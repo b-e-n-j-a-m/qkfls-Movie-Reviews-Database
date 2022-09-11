@@ -1,0 +1,5 @@
+---
+applications:
+ - name: movies-reviews-database-05a
+   random-route: false
+   memory: 128M

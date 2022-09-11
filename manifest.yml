@@ -3,3 +3,15 @@ applications:
  - name: movies-reviews-database-05a
    random-route: false
    memory: 128M
+   services:
+   - natural-language-understanding
+   - cloudantNoSQLDB
+declared-services:
+  natural-language-understanding:
+    label: natural-language-understanding
+    name: cloudappdevs-nlu
+    plan: Free
+  cloudantNoSQLDB:
+    label: cloudantNoSQLDB
+    name: cloudappdev-cloudant
+    plan: Lite
